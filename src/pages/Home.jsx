@@ -65,112 +65,91 @@ export default function Home() {
   return (
     <>
       {/* ===== HERO SECTION ===== */}
-      <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Premium Background Image - Luxury Pool */}
-        <div className="absolute inset-0">
+      <section className="relative min-h-screen flex items-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1572331165267-854da2b021aa?q=80&w=2070&auto=format&fit=crop"
-            alt="Luxury swimming pool with crystal clear water"
-            className="w-full h-full object-cover scale-105"
+            src="/images/project-4.jpeg"
+            alt="Beautiful swimming pool"
+            className="w-full h-full object-cover"
           />
-          {/* Premium overlay gradients */}
-          <div className="absolute inset-0 bg-gradient-to-r from-charcoal/95 via-charcoal/70 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-deep-blue/40 via-transparent to-charcoal/30"></div>
-          <div className="absolute inset-0 bg-deep-blue/10"></div>
+          {/* Dark overlay for text readability */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a1628]/95 via-[#0a1628]/80 to-[#0a1628]/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0a1628]/50"></div>
         </div>
 
-        {/* Animated Decorative Elements */}
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-pool-blue/20 rounded-full blur-[100px] animate-pulse"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-cyan-400/15 rounded-full blur-[80px] animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 right-10 w-64 h-64 bg-deep-blue/20 rounded-full blur-[60px]"></div>
+        {/* Subtle glow effects */}
+        <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-pool-blue/10 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-[400px] h-[400px] bg-deep-blue/15 rounded-full blur-[100px] pointer-events-none"></div>
 
-        {/* Water ripple effect overlay */}
-        <div className="absolute inset-0 opacity-30" style={{ backgroundImage: 'radial-gradient(circle at 70% 60%, rgba(28, 207, 231, 0.15) 0%, transparent 50%)' }}></div>
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-40 lg:py-48">
-          <div className="max-w-4xl">
+        {/* Hero Content */}
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 md:pt-40 md:pb-28">
+          <div className="max-w-3xl">
             {/* Badge */}
-            <div className="animate-fade-in-up mb-8">
-              <span className="inline-flex items-center gap-2.5 bg-white/10 backdrop-blur-md border border-white/20 text-pool-blue px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg">
-                <span className="flex h-2 w-2 relative">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pool-blue opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-pool-blue"></span>
-                </span>
-                Professional Pool Specialists in Zimbabwe
+            <div className="mb-6">
+              <span className="inline-flex items-center gap-2 bg-pool-blue/20 backdrop-blur-sm border border-pool-blue/30 text-pool-blue px-4 py-2 rounded-full text-sm font-medium">
+                <Droplets size={16} />
+                Professional Pool Specialists
               </span>
             </div>
 
-            {/* Main Headline - Fixed alignment */}
-            <h1 className="animate-fade-in-up font-display font-extrabold text-white mb-8" style={{ animationDelay: '0.15s' }}>
-              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] tracking-tight">
-                Premium Pool
-              </span>
-              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[1.05] tracking-tight mt-2">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-pool-blue via-cyan-300 to-pool-blue bg-[length:200%_auto] animate-gradient">
-                  Construction
-                </span>
-              </span>
-              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] tracking-tight mt-2 text-white/90">
-                Repairs & Renovations
-              </span>
+            {/* Main Headline */}
+            <h1 className="font-display font-extrabold text-white leading-[1.1] tracking-tight mb-6">
+              <span className="block text-5xl sm:text-6xl md:text-7xl">Premium Pool</span>
+              <span className="block text-5xl sm:text-6xl md:text-7xl text-pool-blue mt-1">Construction,</span>
+              <span className="block text-4xl sm:text-5xl md:text-6xl text-white/90 mt-1">Repairs & Renovations</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="animate-fade-in-up text-lg md:text-xl lg:text-2xl text-white/80 leading-relaxed mb-10 max-w-2xl font-light" style={{ animationDelay: '0.3s' }}>
-              From stunning new pools to expert repairs, maintenance & fibreglass relining — we deliver 
-              <span className="text-pool-blue font-medium"> world-class workmanship</span> you can trust.
+            <p className="text-lg md:text-xl text-white/70 leading-relaxed mb-8 max-w-xl">
+              From new swimming pools to repairs, maintenance, fibreglass relining, and pump solutions — Fountain Blue Pools delivers professional workmanship you can trust.
             </p>
 
             {/* CTA Buttons */}
-            <div className="animate-fade-in-up flex flex-col sm:flex-row gap-4" style={{ animationDelay: '0.45s' }}>
+            <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a
                 href="https://wa.me/263780292970?text=Hello%2C%20I%20would%20like%20to%20get%20a%20quote%20for%20pool%20services."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-pool-blue to-cyan-400 hover:from-cyan-400 hover:to-pool-blue text-charcoal px-8 py-4 rounded-2xl text-base font-bold transition-all duration-500 shadow-xl shadow-pool-blue/30 hover:shadow-2xl hover:shadow-pool-blue/40 hover:-translate-y-1 hover:scale-[1.02]"
+                className="group inline-flex items-center justify-center gap-2 bg-pool-blue hover:bg-cyan-400 text-charcoal px-7 py-4 rounded-xl text-base font-bold transition-all duration-300 shadow-lg shadow-pool-blue/25 hover:shadow-xl hover:-translate-y-0.5"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
                 </svg>
-                Get a Free Quote
-                <ArrowRight size={18} className="group-hover:translate-x-1.5 transition-transform duration-300" />
+                Get a Quote on WhatsApp
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </a>
               <Link
                 to="/projects"
-                className="group inline-flex items-center justify-center gap-3 bg-white/10 backdrop-blur-md border border-white/30 hover:bg-white/20 hover:border-white/40 text-white px-8 py-4 rounded-2xl text-base font-bold transition-all duration-500 hover:-translate-y-1"
+                className="group inline-flex items-center justify-center gap-2 bg-white/10 border border-white/20 hover:bg-white/20 text-white px-7 py-4 rounded-xl text-base font-bold transition-all duration-300 hover:-translate-y-0.5"
               >
                 View Our Work
-                <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform duration-300" />
+                <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
 
-            {/* Trust Indicators - Premium Stats */}
-            <div className="animate-fade-in-up mt-14 pt-10 border-t border-white/10" style={{ animationDelay: '0.6s' }}>
-              <div className="grid grid-cols-3 gap-6 md:gap-10">
-                {[
-                  { number: '100+', label: 'Pools Built' },
-                  { number: '10+', label: 'Years Experience' },
-                  { number: '100%', label: 'Satisfaction' },
-                ].map((stat) => (
-                  <div key={stat.label} className="text-center md:text-left">
-                    <div className="font-display font-extrabold text-2xl sm:text-3xl md:text-4xl text-transparent bg-clip-text bg-gradient-to-r from-pool-blue to-cyan-300 mb-1">
-                      {stat.number}
-                    </div>
-                    <div className="text-white/50 text-xs sm:text-sm font-medium">{stat.label}</div>
-                  </div>
-                ))}
+            {/* Stats Row */}
+            <div className="flex flex-wrap gap-8 md:gap-12 pt-8 border-t border-white/10">
+              <div>
+                <div className="text-3xl md:text-4xl font-bold text-pool-blue">100+</div>
+                <div className="text-sm text-white/50">Pools Built</div>
+              </div>
+              <div>
+                <div className="text-3xl md:text-4xl font-bold text-pool-blue">10+</div>
+                <div className="text-sm text-white/50">Years Experience</div>
+              </div>
+              <div>
+                <div className="text-3xl md:text-4xl font-bold text-pool-blue">100%</div>
+                <div className="text-sm text-white/50">Satisfaction</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Scroll Indicator - Enhanced */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-          <div className="flex flex-col items-center gap-2">
-            <span className="text-white/40 text-xs font-medium tracking-wider uppercase">Scroll</span>
-            <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-1.5 animate-bounce">
-              <div className="w-1.5 h-3 bg-pool-blue rounded-full"></div>
-            </div>
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
+          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center p-1.5 animate-bounce">
+            <div className="w-1.5 h-3 bg-pool-blue rounded-full"></div>
           </div>
         </div>
       </section>
