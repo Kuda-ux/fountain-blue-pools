@@ -4,38 +4,88 @@ import { ArrowRight, X, ChevronLeft, ChevronRight } from 'lucide-react'
 import SectionHeading from '../components/SectionHeading'
 import SEO from '../components/SEO'
 
-const categories = ['All', 'New Pools', 'Repairs & Renovations', 'Finishing']
+const categories = ['All', 'New Pools', 'Repairs & Renovations', 'Finishing', 'Maintenance']
 
 const projects = [
   {
-    src: '/images/project-1.jpeg',
-    alt: 'New pool shell construction with integrated circular spa feature and brick coping',
+    src: '/images/hero-pool-night.webp',
+    alt: 'Luxury swimming pool with blue LED lighting at sunset',
     category: 'New Pools',
   },
   {
-    src: '/images/project-2.jpeg',
-    alt: 'Collection of completed pool projects showcasing various designs and finishes',
+    src: '/images/pool-modern-stone.webp',
+    alt: 'Premium pool with modern stone columns and steps',
     category: 'New Pools',
   },
   {
-    src: '/images/project-3.jpeg',
-    alt: 'Portfolio of pool construction and renovation projects including deck installations',
+    src: '/images/pool-mountain-view.webp',
+    alt: 'Stunning mountain-view infinity pool with deck',
+    category: 'New Pools',
+  },
+  {
+    src: '/images/pool-wood-deck.webp',
+    alt: 'Modern pool with elegant wooden deck and loungers',
+    category: 'New Pools',
+  },
+  {
+    src: '/images/pool-completed-home.webp',
+    alt: 'Completed residential pool with terracotta surround',
+    category: 'New Pools',
+  },
+  {
+    src: '/images/pool-construction-tiles.webp',
+    alt: 'New pool construction with tropical landscaping',
+    category: 'New Pools',
+  },
+  {
+    src: '/images/pool-shell-mosaic.webp',
+    alt: 'New pool shell with mosaic tile band detail',
+    category: 'New Pools',
+  },
+  {
+    src: '/images/pool-construction-spa.webp',
+    alt: 'Pool construction with integrated circular spa',
+    category: 'New Pools',
+  },
+  {
+    src: '/images/pool-fibreglass-coating.webp',
+    alt: 'Fibreglass relining and coating application',
     category: 'Repairs & Renovations',
   },
   {
-    src: '/images/project-4.jpeg',
-    alt: 'Completed residential pool with terracotta tiled surround and clear blue water',
-    category: 'Finishing',
-  },
-  {
-    src: '/images/project-5.jpeg',
-    alt: 'Large pool renovation with new paving, mosaic tile band, and step construction',
+    src: '/images/pool-renovation-before.webp',
+    alt: 'Pool requiring renovation - before service',
     category: 'Repairs & Renovations',
   },
   {
-    src: '/images/project-6.jpeg',
-    alt: 'Pool marblelite finish application — worker applying smooth blue coating',
+    src: '/images/pool-finishing-work.webp',
+    alt: 'Pool finishing work in progress with team',
+    category: 'Repairs & Renovations',
+  },
+  {
+    src: '/images/pool-marblelite-blue.webp',
+    alt: 'Vibrant blue marblelite pool finish completed',
     category: 'Finishing',
+  },
+  {
+    src: '/images/pool-cleaning-hose.webp',
+    alt: 'Professional pool cleaning and maintenance service',
+    category: 'Maintenance',
+  },
+  {
+    src: '/images/pool-maintenance-net.webp',
+    alt: 'Routine pool maintenance with skimming net',
+    category: 'Maintenance',
+  },
+  {
+    src: '/images/pool-cleaning-skim.webp',
+    alt: 'Pool surface cleaning and debris removal',
+    category: 'Maintenance',
+  },
+  {
+    src: '/images/pool-safety-net.webp',
+    alt: 'Pool with safety net cover for protection',
+    category: 'Maintenance',
   },
 ]
 
@@ -77,8 +127,8 @@ export default function Projects() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/project-4.jpeg"
-            alt="Completed pool project"
+            src="/images/pool-modern-stone.webp"
+            alt="Premium completed pool project"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/80 to-charcoal/60"></div>

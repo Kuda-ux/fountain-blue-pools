@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 
 const SITE_URL = 'https://www.fountainpoolrepairs.co.zw'
-const DEFAULT_IMAGE = `${SITE_URL}/images/project-1.jpeg`
+const DEFAULT_IMAGE = `${SITE_URL}/images/hero-pool-night.webp`
 
 export default function SEO({
   title,

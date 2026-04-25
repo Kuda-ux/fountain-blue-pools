@@ -56,10 +56,10 @@ const whyChooseUs = [
 ]
 
 const projects = [
-  { src: '/images/project-1.jpeg', alt: 'New pool construction with curved spa section', category: 'New Build' },
-  { src: '/images/project-4.jpeg', alt: 'Completed residential pool with tiled surround', category: 'Completed Pool' },
-  { src: '/images/project-5.jpeg', alt: 'Pool renovation and tiling in progress', category: 'Renovation' },
-  { src: '/images/project-6.jpeg', alt: 'Pool marblelite finish application', category: 'Finishing' },
+  { src: '/images/pool-modern-stone.webp', alt: 'Premium pool with modern stone columns and crystal clear water', category: 'Premium Build' },
+  { src: '/images/pool-completed-home.webp', alt: 'Completed residential pool with terracotta tiled surround', category: 'Completed' },
+  { src: '/images/pool-mountain-view.webp', alt: 'Stunning mountain-view infinity pool', category: 'Luxury Pool' },
+  { src: '/images/pool-marblelite-blue.webp', alt: 'Vibrant blue marblelite pool finish', category: 'Marblelite' },
 ]
 
 export default function Home() {
@@ -76,8 +76,8 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/project-4.jpeg"
-            alt="Beautiful swimming pool"
+            src="/images/hero-pool-night.webp"
+            alt="Stunning luxury swimming pool with blue LED lighting at sunset"
             className="w-full h-full object-cover"
           />
           {/* Dark overlay for text readability */}
@@ -263,23 +263,23 @@ export default function Home() {
               <div className="absolute -inset-4 bg-gradient-to-br from-deep-blue/5 to-pool-blue/5 rounded-3xl"></div>
               <div className="relative grid grid-cols-2 gap-4">
                 <img
-                  src="/images/project-4.jpeg"
+                  src="/images/pool-completed-home.webp"
                   alt="Completed residential pool"
                   className="rounded-2xl shadow-lg w-full h-48 object-cover"
                 />
                 <img
-                  src="/images/project-6.jpeg"
-                  alt="Pool finishing work"
+                  src="/images/pool-marblelite-blue.webp"
+                  alt="Marblelite pool finishing work"
                   className="rounded-2xl shadow-lg w-full h-48 object-cover mt-8"
                 />
                 <img
-                  src="/images/project-5.jpeg"
-                  alt="Pool renovation in progress"
+                  src="/images/pool-shell-mosaic.webp"
+                  alt="Pool construction with mosaic tile band"
                   className="rounded-2xl shadow-lg w-full h-48 object-cover"
                 />
                 <img
-                  src="/images/project-1.jpeg"
-                  alt="New pool construction"
+                  src="/images/pool-construction-tiles.webp"
+                  alt="New pool construction with tile work"
                   className="rounded-2xl shadow-lg w-full h-48 object-cover mt-8"
                 />
               </div>
@@ -339,8 +339,8 @@ export default function Home() {
         {/* Background */}
         <div className="absolute inset-0">
           <img
-            src="/images/project-4.jpeg"
-            alt="Beautiful completed pool"
+            src="/images/pool-wood-deck.webp"
+            alt="Beautiful completed pool with wooden deck"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-deep-blue/95 to-deep-blue/80"></div>

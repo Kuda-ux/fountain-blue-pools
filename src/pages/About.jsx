@@ -48,8 +48,8 @@ export default function About() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/project-5.jpeg"
-            alt="Pool construction work"
+            src="/images/pool-construction-tiles.webp"
+            alt="Pool construction work in progress"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/80 to-charcoal/60"></div>
@@ -115,8 +115,8 @@ export default function About() {
               <div className="absolute -inset-4 bg-gradient-to-br from-deep-blue/5 to-pool-blue/5 rounded-3xl"></div>
               <div className="relative">
                 <img
-                  src="/images/project-6.jpeg"
-                  alt="Pool finishing work in progress"
+                  src="/images/pool-fibreglass-coating.webp"
+                  alt="Pool fibreglass coating in progress"
                   className="rounded-2xl shadow-xl w-full h-[400px] object-cover"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-6 max-w-[240px]">
@@ -136,13 +136,13 @@ export default function About() {
             <div className="order-2 lg:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="/images/project-1.jpeg"
-                  alt="New pool construction"
+                  src="/images/pool-shell-mosaic.webp"
+                  alt="New pool construction with mosaic tiles"
                   className="rounded-2xl shadow-lg w-full h-56 object-cover"
                 />
                 <img
-                  src="/images/project-4.jpeg"
-                  alt="Completed pool"
+                  src="/images/pool-completed-home.webp"
+                  alt="Completed residential pool"
                   className="rounded-2xl shadow-lg w-full h-56 object-cover mt-8"
                 />
               </div>

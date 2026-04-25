@@ -2,6 +2,17 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Droplets, Wrench, Sparkles, Shield, Clock, Settings, Filter, CalendarCheck } from 'lucide-react'
 import SEO from '../components/SEO'
 
+const serviceImages = [
+  '/images/pool-shell-mosaic.webp',
+  '/images/pool-fibreglass-coating.webp',
+  '/images/pool-marblelite-blue.webp',
+  '/images/pool-renovation-before.webp',
+  '/images/pool-finishing-work.webp',
+  '/images/pool-cleaning-hose.webp',
+  '/images/pool-maintenance-net.webp',
+  '/images/pool-construction-tiles.webp',
+]
+
 const services = [
   {
     icon: <Droplets className="w-8 h-8" />,
@@ -66,8 +77,8 @@ export default function Services() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/project-6.jpeg"
-            alt="Professional pool work"
+            src="/images/pool-marblelite-blue.webp"
+            alt="Professional pool finishing services"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/80 to-charcoal/60"></div>
@@ -129,7 +140,7 @@ export default function Services() {
                   <div className="relative">
                     <div className="absolute -inset-3 bg-gradient-to-br from-deep-blue/5 to-pool-blue/5 rounded-2xl"></div>
                     <img
-                      src={`/images/project-${(index % 6) + 1}.jpeg`}
+                      src={serviceImages[index % serviceImages.length]}
                       alt={service.title}
                       className="relative rounded-2xl shadow-lg w-full h-80 object-cover"
                     />

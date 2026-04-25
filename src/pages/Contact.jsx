@@ -38,8 +38,8 @@ export default function Contact() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/images/project-1.jpeg"
-            alt="Pool construction project"
+            src="/images/hero-pool-night.webp"
+            alt="Luxury pool with LED lighting"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-charcoal/90 via-charcoal/80 to-charcoal/60"></div>
