@@ -1,0 +1,21 @@
+# Robots.txt for Fountain Blue Pools
+# https://www.fountainpoolrepairs.co.zw/
+
+User-agent: *
+Allow: /
+Disallow:
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Sitemap
+Sitemap: https://www.fountainpoolrepairs.co.zw/sitemap.xml

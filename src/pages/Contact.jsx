@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Phone, MapPin, Send, ArrowRight, CheckCircle } from 'lucide-react'
+import SEO from '../components/SEO'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,6 +28,12 @@ export default function Contact() {
 
   return (
     <>
+      <SEO
+        title="Contact Us - Get a Free Pool Quote"
+        description="Contact Fountain Blue Pools for a free quote on swimming pool construction, repairs, and maintenance in Zimbabwe. Call +263 780 292 970 or WhatsApp us today!"
+        keywords="contact fountain blue pools, pool quote Zimbabwe, swimming pool consultation, pool builders contact"
+        path="/contact"
+      />
       {/* Hero */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">

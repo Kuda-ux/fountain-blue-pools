@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Shield, Award, Heart, MessageCircle, CheckCircle } from 'lucide-react'
 import SectionHeading from '../components/SectionHeading'
+import SEO from '../components/SEO'
 
 const values = [
   {
@@ -37,6 +38,12 @@ const highlights = [
 export default function About() {
   return (
     <>
+      <SEO
+        title="About Us - Trusted Pool Specialists"
+        description="Learn about Fountain Blue Pools - Zimbabwe's most trusted swimming pool construction and repair company. 10+ years of premium workmanship, 100+ pools built across Zimbabwe."
+        keywords="about fountain blue pools, pool company Zimbabwe, trusted pool builders, swimming pool experts Zimbabwe"
+        path="/about"
+      />
       {/* Hero */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">

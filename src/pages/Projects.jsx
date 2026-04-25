@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ArrowRight, X, ChevronLeft, ChevronRight } from 'lucide-react'
 import SectionHeading from '../components/SectionHeading'
+import SEO from '../components/SEO'
 
 const categories = ['All', 'New Pools', 'Repairs & Renovations', 'Finishing']
 
@@ -42,6 +43,15 @@ export default function Projects() {
   const [activeCategory, setActiveCategory] = useState('All')
   const [lightbox, setLightbox] = useState({ open: false, index: 0 })
 
+  const seo = (
+    <SEO
+      title="Our Pool Projects - Photo Gallery"
+      description="Browse our portfolio of completed swimming pool projects across Zimbabwe. New pool builds, renovations, fibreglass relining, marblelite finishes, and more. See our quality workmanship."
+      keywords="pool projects Zimbabwe, swimming pool gallery, pool construction photos, fibreglass relining examples, completed pools Zimbabwe"
+      path="/projects"
+    />
+  )
+
   const filteredProjects =
     activeCategory === 'All'
       ? projects
@@ -62,6 +72,7 @@ export default function Projects() {
 
   return (
     <>
+      {seo}
       {/* Hero */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">

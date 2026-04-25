@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Droplets, Wrench, Sparkles, Shield, Clock, Settings, Filter, CalendarCheck } from 'lucide-react'
+import SEO from '../components/SEO'
 
 const services = [
   {
@@ -55,6 +56,12 @@ const services = [
 export default function Services() {
   return (
     <>
+      <SEO
+        title="Pool Services - Construction, Repairs, Relining & Maintenance"
+        description="Complete swimming pool services in Zimbabwe: new pool construction, repairs, fibreglass relining, marblelite finishes, pump repairs, sand changes, renovations, and maintenance plans. Get a free quote!"
+        keywords="pool services Zimbabwe, swimming pool construction, fibreglass relining, marblelite finish, pump repairs, pool maintenance, sand changes, pool renovation"
+        path="/services"
+      />
       {/* Hero */}
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
         <div className="absolute inset-0">

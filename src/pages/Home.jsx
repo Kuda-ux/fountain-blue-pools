@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight, Shield, Wrench, Sparkles, Droplets, Clock, Users, CheckCircle, ChevronRight } from 'lucide-react'
 import SectionHeading from '../components/SectionHeading'
+import SEO from '../components/SEO'
 
 const services = [
   {
@@ -64,6 +65,12 @@ const projects = [
 export default function Home() {
   return (
     <>
+      <SEO
+        title="#1 Swimming Pool Construction, Repairs & Renovations"
+        description="Zimbabwe's leading swimming pool experts. Professional pool construction, repairs, fibreglass relining, marblelite finishes, pump repairs, and maintenance. Serving Bulawayo, Harare, Maphisa & all of Zimbabwe. Get a FREE quote today!"
+        keywords="swimming pool Zimbabwe, pool construction Zimbabwe, pool repairs, fibreglass relining, marblelite finish, pool builders Bulawayo, pool company Harare, fountain blue pools, Maphisa pools"
+        path="/"
+      />
       {/* ===== HERO SECTION ===== */}
       <section className="relative min-h-screen flex items-center">
         {/* Background Image */}
